@@ -17,6 +17,7 @@ app.use("/otp", otpRouter);
 
 app.use(function(err, req, res, next) {
   if(err) {
+    console.log(err);
     res.status(500).json({
       msg: "Internal server error"
     })
