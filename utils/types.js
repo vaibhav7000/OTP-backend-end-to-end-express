@@ -5,7 +5,7 @@ const emailSchema = z.object({
 })
 
 const otpSchema = z.object({
-    otp: z.string().length(6).regex(/^\d+$/)
+    otp: z.string().length(4).regex(/^\d+$/)
 })
 
 module.exports = {

@@ -26,7 +26,7 @@ function OTPVerificationSchema(req, res, next) {
 
     if(!result.success) {
         res.status(400).json({
-            msg: "You does not the OTP"
+            msg: "OTP is not in valid format"
         })
         return
     }
